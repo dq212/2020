@@ -1,0 +1,380 @@
+body, html {
+  box-sizing: border-box;
+  color: #777;
+  font: 400 15px/1.8 "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  background:#78a2a0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#showcase {
+  min-height: 100%;
+  color:#fff;
+  text-align: center;
+}
+#showcase .bgimg-1 {
+  position: absolute;
+  width:100%;
+  height:100%;
+  opacity: 0.7;
+}
+
+#footer {
+  height:450px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+
+}
+.bgimg-1 {
+  background-image: url("../src/images/puako.jpg");
+  min-height: 100%;
+  z-index:-1
+}
+
+.bgimg-2 {
+  background-image: url("../src/images/urban-city-view-street-black-600w-1023602029.webp");
+  min-height: 200px;
+}
+
+.bgimg-3 {
+  background-image: url("../src/images/puako.jpg");
+  min-height: 200px;
+}
+
+.color-block {
+  color:#fff;
+  font-size:1.8rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin:0 auto;
+  padding:1rem;
+  width:40%;
+}
+
+.color-block span {
+  display: block;
+  font-size:0.9rem;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  opacity:1;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  color: #fff;
+  padding: 18px;
+  letter-spacing: 8px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  text-align:center;
+}
+
+.content {
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+#bio-block {
+  
+}
+#client-block {
+  
+}
+#skills-block {
+  
+}
+
+.light-color-font {
+  background-color:#c1ddde;
+}
+.dark-color-font {
+  color: #222;
+}
+.gray-color-font {
+  color:#777;
+}
+.white {
+  color:white;
+}
+
+.white-bg {
+  background-image: #fff;
+}
+
+.light-color-bg {
+  background:#c1ddde;
+}
+.medium-color-bg {
+  background: #4e797f;
+}
+.dark-color-bg {
+  background:#3f5465;
+}
+
+.section-headers {
+  background-color:transparent;
+  font-size:2rem;
+  color: #fff;
+}
+
+span.contact-text {
+  letter-spacing: normal;
+}
+
+/*WORK*/
+/* #work-holder {
+  width:90%;
+  display:flex;
+  text-align: center;
+
+} */
+/* .item {
+  margin:0 auto;
+  margin:1rem;
+  padding:1rem;
+  display: block;
+  
+} */
+/* .item img {
+  max-width: 90%;
+  height: auto;
+  margin:1rem;
+  padding:1rem;
+} */
+
+/* #work-holder {
+  width:100%;
+  display:flex;
+  margin:2rem 0 0 0;
+} */
+
+/* SLIDER */
+.slider {
+  background-color: #4e797f;
+  /* border-radius: 8px 8px 0 0; */
+  height: 0;
+  color:#fff;
+  opacity:0.98;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+
+  /* left:5%; */
+  margin:0 auto;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.slider:hover{
+  cursor: pointer;
+}
+
+/* .slider.open {
+  height: 100%;
+  top: 0;
+} */
+
+.slider.close {
+  height: 100%;
+  top: 0;
+}
+
+.slider h3 {
+  letter-spacing: 3px;
+}
+
+.slider .hover-text {
+  font-size: 0.9rem;
+  padding:0.5rem 1.5rem;
+  text-align:justify;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+  
+}
+
+
+@media (min-width:768px) {
+  /* WORK */
+#work-holder {
+  width:100%;
+  display:flex;
+  /* background-image: url("../imgs/urban-city-view-street-black-600w-1023602029.webp"); */
+
+  background: rgba(0, 0, 0, 0)
+  /* padding:1rem;
+  margin-top:1rem; */
+}
+
+#work-container {
+  display:grid;
+  width:100%;
+  grid-template-columns: 45% 45% ;
+  justify-content: center;
+  align-items: center
+}
+
+.item {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  height:auto;
+  margin:1rem;
+  max-width: 90%;
+  /* margin:1rem; */
+}
+.item img {
+  max-width: 90%;
+  display:block;
+  text-align:center;
+  /* height: auto; */
+  /* padding:1rem; */
+  /* margin:0 auto; */
+  /* -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
+}
+
+}
+@media (max-width: 768px) {
+
+  .color-block {
+    font-size:1.8rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin:0 auto;
+    padding:1rem;
+    width:60%;
+  }
+  
+  .color-block span {
+    display: block;
+    font-size:0.9rem;
+    font-weight: 300;
+    /* letter-spacing: 8px; */
+    text-align: center;
+  }
+
+  .content {
+    text-align:center;
+    padding:45px 40px;
+    text-align: justify;
+  }
+
+    /* WORK */
+#work-holder {
+  
+  display:block;
+  /* background-image: url("../imgs/urban-city-view-street-black-600w-1023602029.webp"); */
+  background: rgba(0, 0, 0, 0)
+}
+
+
+#work-container {
+  display:inline-block;
+  width:100%;
+}
+
+.item {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  height:auto;
+  margin:1rem 0;
+  max-width: 100%;
+  /* margin:1rem; */
+}
+
+.item img {
+  max-width: 100%;
+  display:block;
+  text-align:center;
+  margin:0 auto;
+  /* height: auto; */
+  /* padding:1rem; */
+  /* margin:0 auto; */
+  /* -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
+}
+
+/* SLIDER */
+.slider {
+  background-color: #4e797f;
+  /* border-radius: 8px 8px 0 0; */
+  height: 40%;
+  color:#fff;
+  opacity:0.9;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+
+  /* left:5%; */
+  margin:0 auto;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.slider:hover{
+  cursor: pointer;
+}
+
+/* .slider.open {
+  height: 100%;
+  top: 0;
+} */
+
+.slider.close {
+  height: 40%;
+  top: 60%;
+}
+
+.slider h3 {
+  letter-spacing: 3px;
+}
+
+.slider .hover-text {
+  font-size: 0.9rem;
+  padding:0.5rem 1.5rem;
+  text-align:justify;
+}
+
+  
+
+  
+}
